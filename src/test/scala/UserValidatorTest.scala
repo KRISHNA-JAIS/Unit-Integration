@@ -7,6 +7,8 @@ class UserValidatorTest extends AnyFlatSpec {
     // Checks if Company exist in Database
     val companyObject = new CompanyValidator()
     val company =new Company("Knoldus","abc@gmail.com","noida");
+    val companys =new Company("Samsung","abc@gmail.com","noida");
     assert(companyObject.companyIsValid(company)==true)
+    assert(companyObject.companyIsValid(companys)==true)
   }
 }
